@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="sys_file_reference.description_position">
+				<source>Description Position</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.justify">
+				<source>Justify</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.nowrap">
+				<source>No Wrap</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.description_position.I.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.responsive">
+				<source>Responsive</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.shape">
+				<source>Image Shape</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.shape.I.">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.shape.I.circle">
+				<source>Circle</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.shape.I.rounded">
+				<source>Rounded Corner</source>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.shape.I.thumbnail">
+				<source>Thumbnail</source>
+			</trans-unit>
+
+
+			<trans-unit id="tt_content.bullets_type.I.0">
+				<source>Unordered</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.I.1">
+				<source>Ordered</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.I.2">
+				<source>Unstyled</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.I.3">
+				<source>Inline</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.I.4">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.I.5">
+				<source>Horizontal Description</source>
+			</trans-unit>
+			<trans-unit id="tt_content.column_class">
+				<source>Column Class</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.1">
+				<source>Heading 1</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.2">
+				<source>Heading 2</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.3">
+				<source>Heading 3</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.4">
+				<source>Heading 4</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.5">
+				<source>Heading 5</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.6">
+				<source>Heading 6</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_layout.I.100">
+				<source>Hidden</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.justify">
+				<source>Justify</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.nowrap">
+				<source>No Wrap</source>
+			</trans-unit>
+			<trans-unit id="tt_content.header_position.I.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position">
+				<source>Alignment</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position.I.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position.I.justify">
+				<source>Justify</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position.I.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position.I.nowrap">
+				<source>No Wrap</source>
+			</trans-unit>
+			<trans-unit id="tt_content.linkToTop_position.I.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="tt_content.page_header">
+				<source>Page Header</source>
+			</trans-unit>
+			<trans-unit id="tt_content.page_header.I.0">
+				<source>Enable</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<f:if condition="{data.header_layout} != 100">
+		<f:if condition="{data.header} || {data.subheader}">
+			<f:if condition="{data.header_position}">
+				<f:then>
+					<!-- htmlmin:ignore --><h{data.header_layout} class="media-heading {f:render(partial: 'Bootstrap/Alignment', arguments: '{position: data.header_position}')}"><!-- htmlmin:ignore -->
+						<f:render partial="Header/Render/Header" arguments="{header: data.header, link: data.header_link, subheader: data.subheader}" />
+					<!-- htmlmin:ignore --></h{data.header_layout}><!-- htmlmin:ignore -->
+				</f:then>
+				<f:else>
+					<!-- htmlmin:ignore --><h{data.header_layout} class="media-heading"><!-- htmlmin:ignore -->
+						<f:render partial="Header/Render/Header" arguments="{header: data.header, link: data.header_link, subheader: data.subheader}" />
+					<!-- htmlmin:ignore --></h{data.header_layout}><!-- htmlmin:ignore -->
+				</f:else>
+			</f:if>
+			<f:render partial="Header/Date" arguments="{date: data.date, position: data.header_position}" />
+		</f:if>
+	</f:if>
+</html>

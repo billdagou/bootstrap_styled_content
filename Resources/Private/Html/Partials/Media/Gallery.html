@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<f:if condition="{files}">
+		<f:switch expression="{data.imageorient}">
+			<f:case value="0">
+				<f:variable name="horizontal" value="center" />
+			</f:case>
+			<f:case value="1">
+				<f:variable name="horizontal" value="right" />
+			</f:case>
+			<f:case value="2">
+				<f:variable name="horizontal" value="left" />
+			</f:case>
+			<f:case value="8">
+				<f:variable name="horizontal" value="center" />
+			</f:case>
+			<f:case value="9">
+				<f:variable name="horizontal" value="right" />
+			</f:case>
+			<f:case value="10">
+				<f:variable name="horizontal" value="left" />
+			</f:case>
+			<f:case value="17">
+				<f:variable name="horizontal" value="right" />
+			</f:case>
+			<f:case value="18">
+				<f:variable name="horizontal" value="left" />
+			</f:case>
+			<f:case value="25">
+				<f:variable name="horizontal" value="right" />
+			</f:case>
+			<f:case value="26">
+				<f:variable name="horizontal" value="left" />
+			</f:case>
+		</f:switch>
+
+		<f:for each="{files}" as="file" iteration="iterator">
+			<f:switch expression="{file.type}">
+				<f:case value="3">
+					<f:variable name="type" value="Audio" />
+				</f:case>
+				<f:case value="4">
+					<f:variable name="type" value="Video" />
+				</f:case>
+				<f:defaultCase>
+					<f:variable name="type" value="Image" />
+				</f:defaultCase>
+			</f:switch>
+
+			<f:if condition="{data.imagecols}">
+				<f:then>
+					<f:if condition="{iterator.index} % {data.imagecols} == 0">
+						<!-- htmlmin:ignore --><div class="row"><!-- htmlmin:ignore -->
+					</f:if>
+					<f:if condition="{data.column_class}">
+						<f:then>
+							<f:if condition="{file.responsive}">
+								<f:then>
+									<div class="{data.column_class}">
+										<f:render partial="Media/Render/{type}" arguments="{file: file, position: horizontal}" />
+									</div>
+								</f:then>
+								<f:else>
+									<f:if condition="{horizontal} == 'left'">
+										<f:then>
+											<div class="{data.column_class}">
+												<f:render partial="Media/Render/{type}" arguments="{file: file, position: horizontal}" />
+											</div>
+										</f:then>
+										<f:else>
+											<div class="{data.column_class} {f:render(partial: 'Bootstrap/Alignment', arguments: '{position: horizontal}')}">
+												<f:render partial="Media/Render/{type}" arguments="{file: file, position: horizontal}" />
+											</div>
+										</f:else>
+									</f:if>
+								</f:else>
+							</f:if>
+						</f:then>
+						<f:else>
+							<div>
+								<f:render partial="Media/Render/{type}" arguments="{file: file, position: horizontal}" />
+							</div>
+						</f:else>
+					</f:if>
+					<f:if condition="{iterator.cycle} % {data.imagecols} == 0 || {iterator.isLast}">
+						<!-- htmlmin:ignore --></div><!-- htmlmin:ignore -->
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:render partial="Media/Render/{type}" arguments="{file: file, position: horizontal}" />
+				</f:else>
+			</f:if>
+		</f:for>
+	</f:if>
+</html>

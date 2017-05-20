@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<f:if condition="{file.link}">
+		<f:then>
+			<f:link.typolink parameter="{file.link}" title="{file.title}">
+				<f:render partial="Bootstrap/Image" arguments="{file: file, position: position}" />
+			</f:link.typolink>
+		</f:then>
+		<f:else>
+			<f:render partial="Bootstrap/Image" arguments="{file: file, position: position}" />
+		</f:else>
+	</f:if>
+	<f:if condition="{file.responsive} && {position} == 'right'">
+		<div class="clearfix"></div>
+	</f:if>
+	<f:if condition="{file.description}">
+		<f:if condition="{file.descriptionPosition}">
+			<f:then>
+				<p class="{f:render(partial: 'Bootstrap/Alignment', arguments: '{position: file.descriptionPosition}')}">{file.description}</p>
+			</f:then>
+			<f:else>
+				<p>{file.description}</p>
+			</f:else>
+		</f:if>
+	</f:if>
+</html>

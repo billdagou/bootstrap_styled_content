@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<f:if condition="{dl}">
+		<f:then>
+			<f:for each="{bullets}" as="bullet">
+				<f:for each="{bullet}" as="subpart" iteration="iteratior">
+					<f:if condition="{iteratior.isFirst}">
+						<f:then>
+							<dt>{subpart}</dt>
+						</f:then>
+						<f:else>
+							<dd>{subpart}</dd>
+						</f:else>
+					</f:if>
+				</f:for>
+			</f:for>
+		</f:then>
+		<f:else>
+			<f:for each="{bullets}" as="bullet">
+				<li>{bullet}</li>
+			</f:for>
+		</f:else>
+	</f:if>
+</html>

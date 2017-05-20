@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="link.to_top">
+				<source>To Top</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

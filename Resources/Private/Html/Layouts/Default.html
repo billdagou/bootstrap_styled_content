@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:bs="http://typo3.org/ns/Dagou/Bootstrap/ViewHelpers"
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+	<bs:load/>
+	<div id="c{data.uid}">
+		<f:if condition="{data._LOCALIZED_UID}">
+			<a id="c{data._LOCALIZED_UID}"></a>
+		</f:if>
+		<f:render section="Header" optional="true">
+			<f:render partial="Header" arguments="{_all}" />
+		</f:render>
+		<f:render section="Main" optional="true" />
+		<f:render partial="LinkToTop" arguments="{_all}" />
+	</div>
+</html>
