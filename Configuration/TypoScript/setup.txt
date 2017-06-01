@@ -1,4 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/Helper/ContentElement.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/Helper/ParseFunc.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Bullets.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Div.txt">
