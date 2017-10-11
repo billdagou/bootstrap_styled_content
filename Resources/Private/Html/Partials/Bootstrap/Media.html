@@ -1,23 +1,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
-	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-	data-namespace-typo3-fluid="true">
-	<f:if condition="{left} || {body} || {right}">
-		<div class="media">
-			<f:if condition="{left}">
-				<div class="media-left">
-					<f:format.raw>{left}</f:format.raw>
-				</div>
-			</f:if>
-			<f:if condition="{body}">
-				<div class="media-body">
-					<f:format.raw>{body}</f:format.raw>
-				</div>
-			</f:if>
-			<f:if condition="{right}">
-				<div class="media-right">
-					<f:format.raw>{right}</f:format.raw>
-				</div>
-			</f:if>
-		</div>
-	</f:if>
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:if condition="{left} || {body} || {right}">
+    <div class="media">
+        <f:if condition="{left}">
+            <div class="media-left">
+                <f:format.raw>{left}</f:format.raw>
+            </div>
+        </f:if>
+        <f:if condition="{body}">
+            <div class="media-body">
+                <f:format.raw>{body}</f:format.raw>
+            </div>
+        </f:if>
+        <f:if condition="{right}">
+            <div class="media-right">
+                <f:format.raw>{right}</f:format.raw>
+            </div>
+        </f:if>
+    </div>
+</f:if>
 </html>

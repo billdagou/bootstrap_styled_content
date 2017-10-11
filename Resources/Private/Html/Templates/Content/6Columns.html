@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Grid"/>
+
+<f:section name="Configuration">
+    <flux:form id="sixColumns" options="{group: '{f:translate(key: \'group.grid\')}'}">
+        <flux:field.input name="col1Class" default="col-sm-2" required="true"/>
+        <flux:field.input name="col2Class" default="col-sm-2" required="true"/>
+        <flux:field.input name="col3Class" default="col-sm-2" required="true"/>
+        <flux:field.input name="col4Class" default="col-sm-2" required="true"/>
+        <flux:field.input name="col5Class" default="col-sm-2" required="true"/>
+        <flux:field.input name="col6Class" default="col-sm-2" required="true"/>
+    </flux:form>
+    <flux:grid>
+        <flux:grid.row>
+            <flux:grid.column name="col1"/>
+            <flux:grid.column name="col2"/>
+            <flux:grid.column name="col3"/>
+            <flux:grid.column name="col4"/>
+            <flux:grid.column name="col5"/>
+            <flux:grid.column name="col6"/>
+        </flux:grid.row>
+    </flux:grid>
+</f:section>
+
+<f:section name="Main">
+    <div class="{col1Class}">
+        <flux:content.render area="col1"/>
+    </div>
+    <div class="{col2Class}">
+        <flux:content.render area="col2"/>
+    </div>
+    <div class="{col3Class}">
+
+        <flux:content.render area="col3"/>
+    </div>
+    <div class="{col4Class}">
+        <flux:content.render area="col4"/>
+    </div>
+    <div class="{col5Class}">
+        <flux:content.render area="col5"/>
+    </div>
+    <div class="{col6Class}">
+        <flux:content.render area="col6"/>
+    </div>
+</f:section>
+</html>

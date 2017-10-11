@@ -6,6 +6,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Header.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Html.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Image.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/List.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Shortcut.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Text.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/Textpic.txt">

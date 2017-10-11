@@ -1,40 +1,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
-	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-	data-namespace-typo3-fluid="true">
-	<f:layout name="Default" />
-	<f:section name="Header">
-		<f:if condition="{data.imageorient} != 25 && {data.imageorient} != 26">
-			<f:render partial="Header" arguments="{_all}" />
-		</f:if>
-	</f:section>
-	<f:section name="Main">
-		<f:if condition="{data.imageorient} == 0 || {data.imageorient} == 1 || {data.imageorient} == 2">
-			<f:render partial="Media/Gallery" arguments="{files: files, data: data}" />
-			<f:format.html>{data.bodytext}</f:format.html>
-		</f:if>
-		<f:if condition="{data.imageorient} == 8 || {data.imageorient} == 9 || {data.imageorient} == 10">
-			<f:format.html>{data.bodytext}</f:format.html>
-			<f:render partial="Media/Gallery" arguments="{files: files, data: data}" />
-		</f:if>
-		<f:if condition="{data.imageorient} == 17">
-			<div class="pull-right">
-				<f:render partial="Media/Gallery" arguments="{files: files, data: data}" />
-			</div>
-			<f:format.html>{data.bodytext}</f:format.html>
-			<div class="clearfix"></div>
-		</f:if>
-		<f:if condition="{data.imageorient} == 18">
-			<div class="pull-left">
-				<f:render partial="Media/Gallery" arguments="{files: files, data: data}" />
-			</div>
-			<f:format.html>{data.bodytext}</f:format.html>
-			<div class="clearfix"></div>
-		</f:if>
-		<f:if condition="{data.imageorient} == 25">
-			<f:render partial="Bootstrap/Media" arguments="{body: '{f:render(partial: \'Bootstrap/Media/Header\', arguments: \'{_all}\')}{data.bodytext -> f:format.html()}', right: '{f:render(partial: \'Media/Gallery\', arguments: \'{files: files, data: data}\')}'}" />
-		</f:if>
-		<f:if condition="{data.imageorient} == 26">
-			<f:render partial="Bootstrap/Media" arguments="{left: '{f:render(partial: \'Media/Gallery\', arguments: \'{files: files, data: data}\')}', body: '{f:render(partial: \'Bootstrap/Media/Header\', arguments: \'{_all}\')}{data.bodytext -> f:format.html()}'}" />
-		</f:if>
-	</f:section>
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="Header">
+    <f:if condition="{data.imageorient} != 25 && {data.imageorient} != 26">
+        <f:render partial="Header" arguments="{_all}"/>
+    </f:if>
+</f:section>
+
+<f:section name="Main">
+    <f:if condition="{data.imageorient} == 0 || {data.imageorient} == 1 || {data.imageorient} == 2">
+        <f:render partial="Media/Gallery" arguments="{files: files, data: data}"/>
+        <f:format.html>{data.bodytext}</f:format.html>
+    </f:if>
+    <f:if condition="{data.imageorient} == 8 || {data.imageorient} == 9 || {data.imageorient} == 10">
+        <f:format.html>{data.bodytext}</f:format.html>
+        <f:render partial="Media/Gallery" arguments="{files: files, data: data}"/>
+    </f:if>
+    <f:if condition="{data.imageorient} == 17">
+        <div class="pull-right">
+            <f:render partial="Media/Gallery" arguments="{files: files, data: data}"/>
+        </div>
+        <f:format.html>{data.bodytext}</f:format.html>
+        <div class="clearfix"></div>
+    </f:if>
+    <f:if condition="{data.imageorient} == 18">
+        <div class="pull-left">
+            <f:render partial="Media/Gallery" arguments="{files: files, data: data}"/>
+        </div>
+        <f:format.html>{data.bodytext}</f:format.html>
+        <div class="clearfix"></div>
+    </f:if>
+    <f:if condition="{data.imageorient} == 25">
+        <f:render partial="Bootstrap/Media" arguments="{body: '{f:render(partial: \'Bootstrap/Media/Header\', arguments: \'{_all}\')}{data.bodytext -> f:format.html()}', right: '{f:render(partial: \'Media/Gallery\', arguments: \'{files: files, data: data}\')}'}"/>
+    </f:if>
+    <f:if condition="{data.imageorient} == 26">
+        <f:render partial="Bootstrap/Media" arguments="{left: '{f:render(partial: \'Media/Gallery\', arguments: \'{files: files, data: data}\')}', body: '{f:render(partial: \'Bootstrap/Media/Header\', arguments: \'{_all}\')}{data.bodytext -> f:format.html()}'}"/>
+    </f:if>
+</f:section>
 </html>

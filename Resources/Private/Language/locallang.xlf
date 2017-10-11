@@ -1,11 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
-		<header/>
-		<body>
-			<trans-unit id="link.to_top">
-				<source>To Top</source>
-			</trans-unit>
-		</body>
-	</file>
+    <file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
+        <header/>
+        <body>
+            <trans-unit id="group.grid">
+                <source>Bootstrap Grids</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.oneColumn">
+                <source>1 Column</source>
+            </trans-unit>
+            <trans-unit id="flux.oneColumn.description">
+                <source>1-Column FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.oneColumn.columns.col1">
+                <source>Main Content</source>
+            </trans-unit>
+            <trans-unit id="flux.oneColumn.fields.col1Class">
+                <source>Main Column Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.twoColumns">
+                <source>2 Columns</source>
+            </trans-unit>
+            <trans-unit id="flux.twoColumns.description">
+                <source>2-Columns FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.twoColumns.columns.col1">
+                <source>Left Content</source>
+            </trans-unit>
+            <trans-unit id="flux.twoColumns.columns.col2">
+                <source>Right Content</source>
+            </trans-unit>
+            <trans-unit id="flux.twoColumns.fields.col1Class">
+                <source>Left Column Class</source>
+            </trans-unit>
+            <trans-unit id="flux.twoColumns.fields.col2Class">
+                <source>Right Column Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.threeColumns">
+                <source>3 Columns</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.description">
+                <source>3-Columns FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.columns.col1">
+                <source>Left Content</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.columns.col2">
+                <source>Middle Content</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.columns.col3">
+                <source>Right Content</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.fields.col1Class">
+                <source>Left Column Class</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.fields.col2Class">
+                <source>Middle Column Class</source>
+            </trans-unit>
+            <trans-unit id="flux.threeColumns.fields.col3Class">
+                <source>Right Column Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.fourColumns">
+                <source>4 Columns</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.description">
+                <source>4-Columns FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.columns.col1">
+                <source>Column 1 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.columns.col2">
+                <source>Column 2 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.columns.col3">
+                <source>Column 3 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.columns.col4">
+                <source>Column 4 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.fields.col1Class">
+                <source>Column 1 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.fields.col2Class">
+                <source>Column 2 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.fields.col3Class">
+                <source>Column 3 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.fourColumns.fields.col4Class">
+                <source>Column 4 Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.sixColumns">
+                <source>6 Columns</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.description">
+                <source>6-Columns FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col1">
+                <source>Column 1 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col2">
+                <source>Column 2 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col3">
+                <source>Column 3 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col4">
+                <source>Column 4 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col5">
+                <source>Column 5 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.columns.col6">
+                <source>Column 6 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col1Class">
+                <source>Column 1 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col2Class">
+                <source>Column 2 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col3Class">
+                <source>Column 3 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col4Class">
+                <source>Column 4 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col5Class">
+                <source>Column 5 Class</source>
+            </trans-unit>
+            <trans-unit id="flux.sixColumns.fields.col6Class">
+                <source>Column 6 Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="link.to_top">
+                <source>To Top</source>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

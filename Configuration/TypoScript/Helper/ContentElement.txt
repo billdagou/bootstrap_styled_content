@@ -1,13 +1,13 @@
 lib.contentElement >
 lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
-	layoutRootPaths {
-		0 = EXT:bootstrap_styled_content/Resources/Private/Layouts/
-	}
-	templateRootPaths {
-		0 = EXT:bootstrap_styled_content/Resources/Private/Templates/
-	}
-	partialRootPaths {
-		0 = EXT:bootstrap_styled_content/Resources/Private/Partials/
-	}
+    layoutRootPaths {
+        0 = EXT:bootstrap_styled_content/Resources/Private/Layouts/
+    }
+    templateRootPaths {
+        0 = EXT:bootstrap_styled_content/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        0 = EXT:bootstrap_styled_content/Resources/Private/Partials/
+    }
 }

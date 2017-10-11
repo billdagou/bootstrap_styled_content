@@ -1,4 +1,4 @@
 tt_content.html =< lib.contentElement
 tt_content.html {
-	templateName = Html
+    templateName = Html
 }
