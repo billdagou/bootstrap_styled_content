@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:if condition="{rowIterator.isFirst} && {data.table_header_position} == 1">
+    <f:then>
+        <!-- htmlmin:ignore --><th><!-- htmlmin:ignore -->
+    </f:then>
+    <f:else>
+        <f:if condition="{colIterator.isFirst} && {data.table_header_position} == 2">
+            <f:then>
+                <!-- htmlmin:ignore --><th><!-- htmlmin:ignore -->
+            </f:then>
+            <f:else>
+                <!-- htmlmin:ignore --><td><!-- htmlmin:ignore -->
+            </f:else>
+        </f:if>
+    </f:else>
+</f:if>
+<f:if condition="{col}">
+    <f:format.nl2br>{col}</f:format.nl2br>
+</f:if>
+<f:if condition="{rowIterator.isFirst} && {data.table_header_position} == 1">
+    <f:then>
+        <!-- htmlmin:ignore --></th><!-- htmlmin:ignore -->
+    </f:then>
+    <f:else>
+        <f:if condition="{colIterator.isFirst} && {data.table_header_position} == 2">
+            <f:then>
+                <!-- htmlmin:ignore --></th><!-- htmlmin:ignore -->
+            </f:then>
+            <f:else>
+                <!-- htmlmin:ignore --></td><!-- htmlmin:ignore -->
+            </f:else>
+        </f:if>
+    </f:else>
+</f:if>
+</html>

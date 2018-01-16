@@ -1,5 +1,5 @@
-# TYPO3 Extension: Bootstrap Styled Content <sup>Beta</sup>
-EXT:bootstrap_styled_content provides common CEs based on Bootstrap for Frontend output.
+# TYPO3 Extension: Bootstrap Styled Content
+EXT:bootstrap\_styled\_content provides common CEs based on Bootstrap for Frontend output.
 
 ## Avaialbe Content Elements
 - Bullets
@@ -9,6 +9,7 @@ EXT:bootstrap_styled_content provides common CEs based on Bootstrap for Frontend
 - Image
 - List
 - Shortcut
+- Table
 - Text
 - Textpic
 
@@ -21,3 +22,5 @@ Requires EXT:flux to be installed.
 - 3 Columns
 - 4 Columns
 - 6 Columns
+
+**Panel**

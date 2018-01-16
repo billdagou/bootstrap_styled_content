@@ -3,6 +3,9 @@
     <file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
         <header/>
         <body>
+            <trans-unit id="group.component">
+                <source>Bootstrap Components</source>
+            </trans-unit>
             <trans-unit id="group.grid">
                 <source>Bootstrap Grids</source>
             </trans-unit>
@@ -141,6 +144,47 @@
             </trans-unit>
             <trans-unit id="flux.sixColumns.fields.col6Class">
                 <source>Column 6 Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.panel">
+                <source>Panel</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.description">
+                <source>Panel FCE</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.columns.heading">
+                <source>Panel Heading</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.columns.body">
+                <source>Panel Body</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.columns.footer">
+                <source>Panel Footer</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class">
+                <source>Contextual Alternative</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.extraClass">
+                <source>Extra Class(es)</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.primary">
+                <source>Primary</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.success">
+                <source>Success</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.info">
+                <source>Info</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.warning">
+                <source>Warning</source>
+            </trans-unit>
+            <trans-unit id="flux.panel.fields.class.option.danger">
+                <source>Danger</source>
             </trans-unit>
 
 

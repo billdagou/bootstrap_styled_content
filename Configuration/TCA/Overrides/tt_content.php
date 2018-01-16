@@ -107,12 +107,42 @@ $additionalColumns = [
             ],
         ],
     ],
+    'table_responsive' => [
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:tt_content.table_responsive',
+        'exclude' => TRUE,
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                ['LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'],
+            ],
+        ],
+    ],
+    'table_thead' => [
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:tt_content.table_thead',
+        'exclude' => TRUE,
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                ['LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'],
+            ],
+        ],
+    ],
 ];
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalColumns);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'appearanceLinks', 'linkToTop_position', 'after:linkToTop');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'gallerySettings', 'column_class', 'after:imagecols');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'headers', 'page_header', 'before:header_layout');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'tablelayout', 'table_responsive', 'before:cols');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'tablelayout', 'table_thead', 'before:table_header_position');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem('tt_content', 'table_class', [
+    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca:tt_content.table_class.hover',
+    'hover',
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem('tt_content', 'table_class', [
+    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca:tt_content.table_class.condensed',
+    'condensed',
+]);
 $GLOBALS['TCA']['tt_content']['palettes']['frames']['showitem'] = '';
 $GLOBALS['TCA']['tt_content']['palettes']['imagelinks']['showitem'] = '';
 $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments']['showitem'] = '';

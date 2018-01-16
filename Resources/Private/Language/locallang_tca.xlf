@@ -125,8 +125,17 @@
             <trans-unit id="tt_content.page_header">
                 <source>Page Header</source>
             </trans-unit>
-            <trans-unit id="tt_content.page_header.I.0">
-                <source>Enable</source>
+            <trans-unit id="tt_content.table_class.condensed">
+                <source>Condensed</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.hover">
+                <source>Hover</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive">
+                <source>Responsive Table</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_thead">
+                <source>Use table header (wrap first row with &lt;thead&gt; tags) </source>
             </trans-unit>
         </body>
     </file>
