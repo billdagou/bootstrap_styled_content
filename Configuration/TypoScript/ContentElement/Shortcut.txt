@@ -1,7 +1,6 @@
 tt_content.shortcut =< lib.contentElement
 tt_content.shortcut {
     templateName = Shortcut
-
     variables {
         shortcuts = RECORDS
         shortcuts {

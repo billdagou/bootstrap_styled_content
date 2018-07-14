@@ -1,0 +1,31 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+editor:
+    config:
+        coreStyles_strike: { element: "del" }
+        format_tags: "h1;h2;h3;h4;h5;h6;p;pre;address"
+        toolbarGroups:
+            - { name: styles, groups: [ styles, format ] }
+            - { name: basicstyles, groups: [ basicstyles ] }
+            - { name: paragraph, groups: [ list, blocks, align ] }
+            - { name: links, groups: [ links ] }
+            - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+            - { name: editing, groups: [ spellchecker ] }
+            - { name: insert, groups: [ insert ] }
+            - { name: tools, groups: [ table, specialchar ] }
+            - { name: document, groups: [ mode ] }
+        justifyClasses:
+            - text-left
+            - text-center
+            - text-right
+            - text-justify
+        extraPlugins:
+            - justify
+        removePlugins:
+            - image
+        removeButtons:
+            - Anchor
+            - Styles

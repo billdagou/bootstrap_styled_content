@@ -145,52 +145,6 @@
             <trans-unit id="flux.sixColumns.fields.col6Class">
                 <source>Column 6 Class</source>
             </trans-unit>
-
-
-            <trans-unit id="flux.panel">
-                <source>Panel</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.description">
-                <source>Panel FCE</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.columns.heading">
-                <source>Panel Heading</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.columns.body">
-                <source>Panel Body</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.columns.footer">
-                <source>Panel Footer</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class">
-                <source>Contextual Alternative</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.extraClass">
-                <source>Extra Class(es)</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.default">
-                <source>Default</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.primary">
-                <source>Primary</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.success">
-                <source>Success</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.info">
-                <source>Info</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.warning">
-                <source>Warning</source>
-            </trans-unit>
-            <trans-unit id="flux.panel.fields.class.option.danger">
-                <source>Danger</source>
-            </trans-unit>
-
-
-            <trans-unit id="link.to_top">
-                <source>To Top</source>
-            </trans-unit>
         </body>
     </file>
 </xliff>

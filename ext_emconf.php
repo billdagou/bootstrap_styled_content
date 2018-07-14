@@ -1,11 +1,15 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Bootstrap Styled Content',
-    'description' => 'Common CEs based on Bootstrap for Frontend output.',
+    'description' => 'A set of common content elements based on Bootstrap for Frontend output.',
     'category' => 'fe',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-8.7.99',
+        ],
+        'conflicts' => [
+            'css_styled_content' => '',
+            'fluid_styled_content' => '',
         ],
         'suggests' => [
             'flux' => '',
@@ -14,5 +18,5 @@ $EM_CONF[$_EXTKEY] = [
     'state' => 'stable',
     'author' => 'Bill.Dagou',
     'author_email' => 'billdagou@gmail.com',
-    'version' => '3.3.7',
+    'version' => '4.1.1',
 ];

@@ -1,14 +1,15 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      data-namespace-typo3-fluid="true">
-<f:if condition="{rowIterator.isFirst} && {data.table_header_position} == 1">
+<html lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true">
+<f:if condition="{rowIterator.isFirst} && {thead}">
     <f:then>
-        <!-- htmlmin:ignore --><th><!-- htmlmin:ignore -->
+        <!-- htmlmin:ignore --><th scope="col"><!-- htmlmin:ignore -->
     </f:then>
     <f:else>
-        <f:if condition="{colIterator.isFirst} && {data.table_header_position} == 2">
+        <f:if condition="{colIterator.isFirst} && {thead_col} && !({rowIterator.isLast} && {tfoot})">
             <f:then>
-                <!-- htmlmin:ignore --><th><!-- htmlmin:ignore -->
+                <!-- htmlmin:ignore --><th scope="row"><!-- htmlmin:ignore -->
             </f:then>
             <f:else>
                 <!-- htmlmin:ignore --><td><!-- htmlmin:ignore -->
@@ -19,19 +20,11 @@
 <f:if condition="{col}">
     <f:format.nl2br>{col}</f:format.nl2br>
 </f:if>
-<f:if condition="{rowIterator.isFirst} && {data.table_header_position} == 1">
+<f:if condition="{rowIterator.isFirst} && {thead} || {colIterator.isFirst} && {thead_col}">
     <f:then>
         <!-- htmlmin:ignore --></th><!-- htmlmin:ignore -->
     </f:then>
     <f:else>
-        <f:if condition="{colIterator.isFirst} && {data.table_header_position} == 2">
-            <f:then>
-                <!-- htmlmin:ignore --></th><!-- htmlmin:ignore -->
-            </f:then>
-            <f:else>
-                <!-- htmlmin:ignore --></td><!-- htmlmin:ignore -->
-            </f:else>
-        </f:if>
+        <!-- htmlmin:ignore --></td><!-- htmlmin:ignore -->
     </f:else>
-</f:if>
 </html>

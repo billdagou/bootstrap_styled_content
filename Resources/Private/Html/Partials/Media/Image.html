@@ -1,0 +1,53 @@
+<html lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true">
+<f:variable name="bscImageClass" />
+<f:if condition="{file.description}">
+    <f:variable name="bscImageClass" value="figure-img" />
+</f:if>
+<f:if condition="{file.description} || {file.responsive}">
+    <f:variable name="bscImageClass">
+        {bscImageClass}{f:if(condition: bscImageClass, then: ' ')}img-fluid
+    </f:variable>
+</f:if>
+<f:if condition="{file.thumbnail}">
+    <f:variable name="bscImageClass">
+        {bscImageClass}{f:if(condition: bscImageClass, then: ' ')}img-thumbnail
+    </f:variable>
+</f:if>
+<f:if condition="{file.shape}">
+    <f:variable name="bscImageClass">
+        {bscImageClass}{f:if(condition: bscImageClass, then: ' ')}{f:render(partial: 'Bootstrap/Utilities/Border', arguments: '{shape: file.shape}')}
+    </f:variable>
+</f:if>
+<f:if condition="{file.description}">
+    <f:then>
+        <figure class="figure">
+            <f:if condition="{file.link}">
+                <f:then>
+                    <f:link.typolink parameter="{file.link}" title="{file.title}">
+                        <f:image class="{bscImageClass}" image="{file}" alt="{file.alternative}" title="{file.title}" />
+                    </f:link.typolink>
+                </f:then>
+                <f:else>
+                    <f:image class="{bscImageClass}" image="{file}" alt="{file.alternative}" title="{file.title}" />
+                </f:else>
+            </f:if>
+            <figcaption class="figure-caption{f:if(condition: file.descriptionPosition, then: ' {f:render(partial: \'Bootstrap/Utilities/Text\', arguments: \'{value: file.descriptionPosition}\')}')}">{file.description}</figcaption>
+        </figure>
+    </f:then>
+    <f:else>
+        <f:if condition="{file.link}">
+            <f:then>
+                <f:link.typolink parameter="{file.link}" title="{file.title}">
+                    <f:image class="{bscImageClass}" image="{file}" alt="{file.alternative}" title="{file.title}" />
+                </f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:image class="{bscImageClass}" image="{file}" alt="{file.alternative}" title="{file.title}" />
+            </f:else>
+        </f:if>
+    </f:else>
+</f:if>
+</html>

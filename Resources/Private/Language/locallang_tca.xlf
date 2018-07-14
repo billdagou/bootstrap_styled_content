@@ -3,11 +3,11 @@
     <file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
         <header/>
         <body>
-            <trans-unit id="sys_file_reference.description_position">
-                <source>Description Position</source>
+            <trans-unit id="sys_file_reference.aspect_ratio">
+                <source>Aspect Ratio</source>
             </trans-unit>
-            <trans-unit id="sys_file_reference.description_position.I.">
-                <source>None</source>
+            <trans-unit id="sys_file_reference.description_position">
+                <source>Description Alignment</source>
             </trans-unit>
             <trans-unit id="sys_file_reference.description_position.I.center">
                 <source>Center</source>
@@ -18,9 +18,6 @@
             <trans-unit id="sys_file_reference.description_position.I.left">
                 <source>Left</source>
             </trans-unit>
-            <trans-unit id="sys_file_reference.description_position.I.nowrap">
-                <source>No Wrap</source>
-            </trans-unit>
             <trans-unit id="sys_file_reference.description_position.I.right">
                 <source>Right</source>
             </trans-unit>
@@ -28,10 +25,7 @@
                 <source>Responsive</source>
             </trans-unit>
             <trans-unit id="sys_file_reference.shape">
-                <source>Image Shape</source>
-            </trans-unit>
-            <trans-unit id="sys_file_reference.shape.I.">
-                <source>None</source>
+                <source>Shape</source>
             </trans-unit>
             <trans-unit id="sys_file_reference.shape.I.circle">
                 <source>Circle</source>
@@ -39,31 +33,31 @@
             <trans-unit id="sys_file_reference.shape.I.rounded">
                 <source>Rounded Corner</source>
             </trans-unit>
-            <trans-unit id="sys_file_reference.shape.I.thumbnail">
+            <trans-unit id="sys_file_reference.shape.I.square">
+                <source>Square</source>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.thumbnail">
                 <source>Thumbnail</source>
             </trans-unit>
 
 
-            <trans-unit id="tt_content.bullets_type.I.0">
-                <source>Unordered</source>
-            </trans-unit>
-            <trans-unit id="tt_content.bullets_type.I.1">
-                <source>Ordered</source>
-            </trans-unit>
-            <trans-unit id="tt_content.bullets_type.I.2">
-                <source>Unstyled</source>
-            </trans-unit>
             <trans-unit id="tt_content.bullets_type.I.3">
-                <source>Inline</source>
+                <source>Unstyled list</source>
             </trans-unit>
             <trans-unit id="tt_content.bullets_type.I.4">
-                <source>Description</source>
+                <source>Inline list</source>
             </trans-unit>
-            <trans-unit id="tt_content.bullets_type.I.5">
-                <source>Horizontal Description</source>
+            <trans-unit id="tt_content.column_classes">
+                <source>Column Classes</source>
             </trans-unit>
-            <trans-unit id="tt_content.column_class">
-                <source>Column Class</source>
+            <trans-unit id="tt_content.display_heading">
+                <source>Display Heading</source>
+            </trans-unit>
+            <trans-unit id="tt_content.extra_classes">
+                <source>Extra Classes</source>
+            </trans-unit>
+            <trans-unit id="tt_content.gallery_classes">
+                <source>Gallery Classes</source>
             </trans-unit>
             <trans-unit id="tt_content.header_layout.I.1">
                 <source>Heading 1</source>
@@ -86,56 +80,152 @@
             <trans-unit id="tt_content.header_layout.I.100">
                 <source>Hidden</source>
             </trans-unit>
-            <trans-unit id="tt_content.header_position.I.">
-                <source>None</source>
-            </trans-unit>
-            <trans-unit id="tt_content.header_position.I.center">
-                <source>Center</source>
-            </trans-unit>
             <trans-unit id="tt_content.header_position.I.justify">
                 <source>Justify</source>
             </trans-unit>
-            <trans-unit id="tt_content.header_position.I.left">
+            <trans-unit id="tt_content.margin_side">
+                <source>Margin Side</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_side.I.all">
+                <source>All</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_side.I.bottom">
+                <source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_side.I.left">
                 <source>Left</source>
             </trans-unit>
-            <trans-unit id="tt_content.header_position.I.nowrap">
-                <source>No Wrap</source>
+            <trans-unit id="tt_content.margin_side.I.none">
+                <source>None</source>
             </trans-unit>
-            <trans-unit id="tt_content.header_position.I.right">
+            <trans-unit id="tt_content.margin_side.I.right">
                 <source>Right</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position">
-                <source>Alignment</source>
+            <trans-unit id="tt_content.margin_side.I.top">
+                <source>Top</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position.I.center">
-                <source>Center</source>
+            <trans-unit id="tt_content.margin_side.I.x">
+                <source>Left and Right</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position.I.justify">
-                <source>Justify</source>
+            <trans-unit id="tt_content.margin_side.I.y">
+                <source>Top and Bottom</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position.I.left">
+            <trans-unit id="tt_content.margin_size">
+                <source>Margin Size</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.0">
+                <source>0</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.1">
+                <source>1</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.2">
+                <source>2</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.3">
+                <source>3</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.4">
+                <source>4</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.5">
+                <source>5</source>
+            </trans-unit>
+            <trans-unit id="tt_content.margin_size.I.auto">
+                <source>auto</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_side">
+                <source>Padding Side</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_side.I.all">
+                <source>All</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_side.I.bottom">
+                <source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_side.I.left">
                 <source>Left</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position.I.nowrap">
-                <source>No Wrap</source>
+            <trans-unit id="tt_content.padding_side.I.none">
+                <source>None</source>
             </trans-unit>
-            <trans-unit id="tt_content.linkToTop_position.I.right">
+            <trans-unit id="tt_content.padding_side.I.right">
                 <source>Right</source>
             </trans-unit>
-            <trans-unit id="tt_content.page_header">
-                <source>Page Header</source>
+            <trans-unit id="tt_content.padding_side.I.top">
+                <source>Top</source>
             </trans-unit>
-            <trans-unit id="tt_content.table_class.condensed">
-                <source>Condensed</source>
+            <trans-unit id="tt_content.padding_side.I.x">
+                <source>Left and Right</source>
             </trans-unit>
-            <trans-unit id="tt_content.table_class.hover">
-                <source>Hover</source>
+            <trans-unit id="tt_content.padding_side.I.y">
+                <source>Top and Bottom</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size">
+                <source>Padding Size</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.0">
+                <source>0</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.1">
+                <source>1</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.2">
+                <source>2</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.3">
+                <source>3</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.4">
+                <source>4</source>
+            </trans-unit>
+            <trans-unit id="tt_content.padding_size.I.5">
+                <source>5</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.bordered">
+                <source>Bordered Table</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.borderless">
+                <source>Borderless Table</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.color">
+                <source>Invert Colors</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.hover">
+                <source>Hoverable Rows</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.sm">
+                <source>Small Table</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_class.I.striped">
+                <source>Striped Rows</source>
             </trans-unit>
             <trans-unit id="tt_content.table_responsive">
-                <source>Responsive Table</source>
+                <source>Table Responsive</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.none">
+                <source>None</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.lg">
+                <source>Large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.md">
+                <source>Medium</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.sm">
+                <source>Small</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.xl">
+                <source>Extra Large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_responsive.I.xs">
+                <source>Extra Small</source>
             </trans-unit>
             <trans-unit id="tt_content.table_thead">
-                <source>Use table header (wrap first row with &lt;thead&gt; tags) </source>
+                <source><![CDATA[Use table header (wrap first row with <thead> tag)]]></source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_thead_col">
+                <source><![CDATA[Wrap first column with <th> tag]]></source>
             </trans-unit>
         </body>
     </file>

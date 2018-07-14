@@ -1,27 +1,26 @@
 tt_content.bullets =< lib.contentElement
 tt_content.bullets {
     templateName = Bullets
-
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
         10 {
-            as = bullets
             if {
-                value = 0,1,2,3
+                value = 0,1,2,3,4
                 isInList.field = bullets_type
             }
             fieldName = bodytext
             removeEmptyEntries = 1
+            as = bullets
         }
         20 = TYPO3\CMS\Frontend\DataProcessing\CommaSeparatedValueProcessor
         20 {
-            as = bullets
-            fieldDelimiter = |
             fieldName = bodytext
             if {
-                value = 4,5
+                value = 2
                 isInList.field = bullets_type
             }
+            fieldDelimiter = |
+            as = bullets
         }
     }
 }

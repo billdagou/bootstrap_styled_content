@@ -1,0 +1,10 @@
+tt_content.textmedia =< lib.contentElement
+tt_content.textmedia {
+    templateName = TextMedia
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = assets
+        }
+    }
+}

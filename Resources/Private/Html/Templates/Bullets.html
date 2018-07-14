@@ -1,27 +1,24 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
-      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      data-namespace-typo3-fluid="true">
-<f:layout name="Default"/>
-
+<html lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
 <f:section name="Main">
     <f:switch expression="{data.bullets_type}">
         <f:case value="0">
-            <f:render partial="Bootstrap/List/Unordered" arguments="{bullets: bullets}"/>
+            <f:render partial="Bullets/Unordered" arguments="{bullets: bullets}"/>
         </f:case>
         <f:case value="1">
-            <f:render partial="Bootstrap/List/Ordered" arguments="{bullets: bullets}"/>
+            <f:render partial="Bullets/Ordered" arguments="{bullets: bullets}"/>
         </f:case>
         <f:case value="2">
-            <f:render partial="Bootstrap/List/Unordered" arguments="{bullets: bullets, class: 'list-unstyled'}"/>
+            <f:render partial="Bullets/Definition" arguments="{bullets: bullets}"/>
         </f:case>
         <f:case value="3">
-            <f:render partial="Bootstrap/List/Unordered" arguments="{bullets: bullets, class: 'list-inline'}"/>
+            <f:render partial="Bullets/Unordered" arguments="{bullets: bullets, unstyled: 'true'}"/>
         </f:case>
         <f:case value="4">
-            <f:render partial="Bootstrap/List/Description" arguments="{bullets: bullets}"/>
-        </f:case>
-        <f:case value="5">
-            <f:render partial="Bootstrap/List/Description" arguments="{bullets: bullets, class: 'dl-horizontal'}"/>
+            <f:render partial="Bullets/Unordered" arguments="{bullets: bullets, inline: 'true'}"/>
         </f:case>
     </f:switch>
 </f:section>
