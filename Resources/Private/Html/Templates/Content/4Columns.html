@@ -5,7 +5,7 @@
         data-namespace-typo3-fluid="true">
 <f:layout name="Grid" />
 <f:section name="Configuration">
-    <flux:form id="fourColumns" options="{group: '{f:translate(key: \'group.grid\')}'}">
+    <flux:form id="fourColumns" options="{group: 'grid'}">
         <flux:field.input name="col1Class" default="col-sm-3" required="true" />
         <flux:field.input name="col2Class" default="col-sm-3" required="true" />
         <flux:field.input name="col3Class" default="col-sm-3" required="true" />
@@ -13,10 +13,10 @@
     </flux:form>
     <flux:grid>
         <flux:grid.row>
-            <flux:grid.column name="col1" />
-            <flux:grid.column name="col2" />
-            <flux:grid.column name="col3" />
-            <flux:grid.column name="col4" />
+            <flux:grid.column name="col1" colPos="1" />
+            <flux:grid.column name="col2" colPos="2" />
+            <flux:grid.column name="col3" colPos="3" />
+            <flux:grid.column name="col4" colPos="4" />
         </flux:grid.row>
     </flux:grid>
 </f:section>

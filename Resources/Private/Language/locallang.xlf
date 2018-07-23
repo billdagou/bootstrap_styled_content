@@ -3,10 +3,7 @@
     <file source-language="en" datatype="plaintext" original="messages" product-name="bootstrap_styled_content">
         <header/>
         <body>
-            <trans-unit id="group.component">
-                <source>Bootstrap Components</source>
-            </trans-unit>
-            <trans-unit id="group.grid">
+            <trans-unit id="flux.newContentWizard.grid">
                 <source>Bootstrap Grids</source>
             </trans-unit>
 
@@ -16,9 +13,6 @@
             </trans-unit>
             <trans-unit id="flux.oneColumn.description">
                 <source>1-Column FCE</source>
-            </trans-unit>
-            <trans-unit id="flux.oneColumn.columns.col1">
-                <source>Main Content</source>
             </trans-unit>
             <trans-unit id="flux.oneColumn.fields.col1Class">
                 <source>Main Column Class</source>
@@ -30,12 +24,6 @@
             </trans-unit>
             <trans-unit id="flux.twoColumns.description">
                 <source>2-Columns FCE</source>
-            </trans-unit>
-            <trans-unit id="flux.twoColumns.columns.col1">
-                <source>Left Content</source>
-            </trans-unit>
-            <trans-unit id="flux.twoColumns.columns.col2">
-                <source>Right Content</source>
             </trans-unit>
             <trans-unit id="flux.twoColumns.fields.col1Class">
                 <source>Left Column Class</source>
@@ -50,15 +38,6 @@
             </trans-unit>
             <trans-unit id="flux.threeColumns.description">
                 <source>3-Columns FCE</source>
-            </trans-unit>
-            <trans-unit id="flux.threeColumns.columns.col1">
-                <source>Left Content</source>
-            </trans-unit>
-            <trans-unit id="flux.threeColumns.columns.col2">
-                <source>Middle Content</source>
-            </trans-unit>
-            <trans-unit id="flux.threeColumns.columns.col3">
-                <source>Right Content</source>
             </trans-unit>
             <trans-unit id="flux.threeColumns.fields.col1Class">
                 <source>Left Column Class</source>
@@ -76,18 +55,6 @@
             </trans-unit>
             <trans-unit id="flux.fourColumns.description">
                 <source>4-Columns FCE</source>
-            </trans-unit>
-            <trans-unit id="flux.fourColumns.columns.col1">
-                <source>Column 1 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.fourColumns.columns.col2">
-                <source>Column 2 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.fourColumns.columns.col3">
-                <source>Column 3 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.fourColumns.columns.col4">
-                <source>Column 4 Content</source>
             </trans-unit>
             <trans-unit id="flux.fourColumns.fields.col1Class">
                 <source>Column 1 Class</source>
@@ -109,24 +76,6 @@
             <trans-unit id="flux.sixColumns.description">
                 <source>6-Columns FCE</source>
             </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col1">
-                <source>Column 1 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col2">
-                <source>Column 2 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col3">
-                <source>Column 3 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col4">
-                <source>Column 4 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col5">
-                <source>Column 5 Content</source>
-            </trans-unit>
-            <trans-unit id="flux.sixColumns.columns.col6">
-                <source>Column 6 Content</source>
-            </trans-unit>
             <trans-unit id="flux.sixColumns.fields.col1Class">
                 <source>Column 1 Class</source>
             </trans-unit>
@@ -144,6 +93,38 @@
             </trans-unit>
             <trans-unit id="flux.sixColumns.fields.col6Class">
                 <source>Column 6 Class</source>
+            </trans-unit>
+
+
+            <trans-unit id="flux.grid.columns.left">
+                <source>Left Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.main">
+                <source>Main Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.middle">
+                <source>Middle Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.right">
+                <source>Right Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col1">
+                <source>Column 1 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col2">
+                <source>Column 2 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col3">
+                <source>Column 3 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col4">
+                <source>Column 4 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col5">
+                <source>Column 5 Content</source>
+            </trans-unit>
+            <trans-unit id="flux.grid.columns.col6">
+                <source>Column 6 Content</source>
             </trans-unit>
         </body>
     </file>
