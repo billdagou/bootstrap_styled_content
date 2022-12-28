@@ -1,8 +1,5 @@
-<html lang="en"
-        xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-        data-namespace-typo3-fluid="true">
 <f:variable name="bscBorderClass" />
+
 <f:if condition="{border}">
     <f:variable name="bscBorderClass">
         border{f:if(condition: position, then: '-{position}')}{f:if(condition: subtractive, then: '-0')}
@@ -28,4 +25,3 @@
     </f:defaultCase>
 </f:switch>
 {bscBorderClass}{f:if(condition: '{bscBorderClass} && {bscShapeClass}', then: ' ')}{bscShapeClass}
-</html>

@@ -1,2 +1,0 @@
-# cat=RTE; type=boolean; label=Enable BSC RTE Configuration
-enableRTE =

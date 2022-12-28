@@ -1,8 +1,5 @@
-<html lang="en"
-        xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-        data-namespace-typo3-fluid="true">
 <f:variable name="bscDefaultClass" />
+
 <f:if condition="{data.margin_side}">
     <f:variable name="bscDefaultClass">
         <f:render partial="Bootstrap/Utilities/Spacing" arguments="{property: 'margin', side: '{f:if(condition: \'{data.margin_side} != \\\'all\\\'\', then: data.margin_side)}', size: data.margin_size}" />
@@ -39,4 +36,3 @@
         <f:render partial="Footer/All" arguments="{_all}" />
     </f:render>
 <!-- htmlmin:ignore --></div><!-- htmlmin:ignore -->
-</html>

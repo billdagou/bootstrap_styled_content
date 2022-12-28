@@ -1,26 +1,24 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-    die('Access denied.');
-}
+defined('TYPO3_MODE') || die();
 
 $additionalColumns = [
     'aspect_ratio' => [
-        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.aspect_ratio',
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.aspect_ratio',
         'exclude' => TRUE,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                ['21:9', '21by9'],
-                ['16:9', '16by9'],
-                ['4:3', '4by3'],
-                ['1:1', '1by1'],
+                ['21:9', '21x9'],
+                ['16:9', '16x9'],
+                ['4:3', '4x3'],
+                ['1:1', '1x1'],
             ],
-            'default' => '16by9',
+            'default' => '16x9',
         ],
     ],
     'description_position' => [
-        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.description_position',
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.description_position',
         'exclude' => TRUE,
         'config' => [
             'type' => 'select',
@@ -28,27 +26,23 @@ $additionalColumns = [
             'items' => [
                 ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value', ''],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.description_position.I.center',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.description_position.I.center',
                     'center',
                 ],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.description_position.I.right',
-                    'right',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.description_position.I.start',
+                    'start',
                 ],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.description_position.I.left',
-                    'left',
-                ],
-                [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.description_position.I.justify',
-                    'justify',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.description_position.I.end',
+                    'end',
                 ],
             ],
             'default' => '',
         ],
     ],
     'responsive' => [
-        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.responsive',
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.responsive',
         'exclude' => TRUE,
         'config' => [
             'type' => 'check',
@@ -58,7 +52,7 @@ $additionalColumns = [
         ],
     ],
     'shape' => [
-        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.shape',
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.shape',
         'exclude' => TRUE,
         'config' => [
             'type' => 'select',
@@ -66,15 +60,15 @@ $additionalColumns = [
             'items' => [
                 ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value', ''],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.shape.I.rounded',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.shape.I.rounded',
                     'rounded',
                 ],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.shape.I.circle',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.shape.I.circle',
                     'circle',
                 ],
                 [
-                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.shape.I.square',
+                    'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.shape.I.square',
                     'square',
                 ],
             ],
@@ -82,7 +76,7 @@ $additionalColumns = [
         ],
     ],
     'thumbnail' => [
-        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.thumbnail',
+        'label' => 'LLL:EXT:bootstrap_styled_content/Resources/Private/Language/locallang_db.xlf:sys_file_reference.thumbnail',
         'exclude' => TRUE,
         'config' => [
             'type' => 'check',

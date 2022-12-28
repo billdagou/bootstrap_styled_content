@@ -17,7 +17,7 @@ tt_content.bullets {
             fieldName = bodytext
             if {
                 value = 2
-                isInList.field = bullets_type
+                equals.field = bullets_type
             }
             fieldDelimiter = |
             as = bullets

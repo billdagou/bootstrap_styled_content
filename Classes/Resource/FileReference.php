@@ -5,35 +5,35 @@ class FileReference extends \TYPO3\CMS\Core\Resource\FileReference {
     /**
      * @return string
      */
-    public function getAspectRatio() {
+    public function getAspectRatio(): string {
         return $this->getProperty('aspect_ratio');
     }
 
     /**
      * @return string
      */
-    public function getDescriptionPosition() {
+    public function getDescriptionPosition(): string {
         return $this->getProperty('description_position');
     }
 
     /**
      * @return bool
      */
-    public function getResponsive() {
+    public function getResponsive(): bool {
         return (bool)$this->getProperty('responsive');
     }
 
     /**
      * @return string
      */
-    public function getShape() {
+    public function getShape(): string {
         return $this->getProperty('shape');
     }
 
     /**
      * @return bool
      */
-    public function getThumbnail() {
+    public function getThumbnail(): bool {
         return (bool)$this->getProperty('thumbnail');
     }
 }

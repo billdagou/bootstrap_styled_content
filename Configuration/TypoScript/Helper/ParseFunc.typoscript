@@ -10,15 +10,6 @@ lib.parseFunc {
         }
     }
     tags {
-        link = TEXT
-        link {
-            current = 1
-            typolink {
-                parameter.data = parameters:allParams
-                extTarget = {$styles.content.links.extTarget}
-            }
-            parseFunc.constants = 1
-        }
         a = TEXT
         a {
             current = 1
@@ -26,8 +17,9 @@ lib.parseFunc {
                 parameter.data = parameters:href
                 title.data = parameters:title
                 ATagParams.data = parameters:allParams
-                target.data = parameters:target
-                extTarget = {$styles.content.links.extTarget}
+                target.ifEmpty.data = parameters:target
+                extTarget.ifEmpty < config.extTarget
+                extTarget.ifEmpty.override = {$styles.content.links.extTarget}
                 extTarget.override.data = parameters:target
             }
         }
@@ -43,6 +35,7 @@ lib.parseFunc {
             htmlSpecialChars = 2
         }
     }
+    htmlSanitize = 1
 }
 
 lib.parseFunc_RTE < lib.parseFunc
@@ -56,6 +49,9 @@ lib.parseFunc_RTE {
         ul {
             stripNL = 1
             stdWrap.parseFunc = < lib.parseFunc
+        }
+        pre {
+            stdWrap.parseFunc < lib.parseFunc
         }
         table {
             stripNL = 1
@@ -74,7 +70,10 @@ lib.parseFunc_RTE {
             HTMLtableCells {
                 default.stdWrap {
                     parseFunc = < lib.parseFunc_RTE
-                    parseFunc.nonTypoTagStdWrap.encapsLines.nonWrappedTag =
+                    parseFunc.nonTypoTagStdWrap.encapsLines {
+                        nonWrappedTag =
+                        innerStdWrap_all.ifBlank =
+                    }
                 }
                 addChr10BetweenParagraphs = 1
             }
@@ -94,18 +93,16 @@ lib.parseFunc_RTE {
         dd < .div
     }
     nonTypoTagStdWrap {
+        HTMLparser = 1
+        HTMLparser {
+            keepNonMatchedTags = 1
+            htmlSpecialChars = 2
+        }
         encapsLines {
             encapsTagList = p, pre, h1, h2, h3, h4, h5, h6, hr, dt
             remapTag.DIV = P
             nonWrappedTag = P
             innerStdWrap_all.ifBlank = &nbsp;
-        }
-    }
-    nonTypoTagStdWrap {
-        HTMLparser = 1
-        HTMLparser {
-            keepNonMatchedTags = 1
-            htmlSpecialChars = 2
         }
     }
 }

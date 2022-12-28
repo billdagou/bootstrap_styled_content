@@ -15,17 +15,19 @@ editor:
             - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
             - { name: editing, groups: [ spellchecker ] }
             - { name: insert, groups: [ insert ] }
-            - { name: tools, groups: [ table, specialchar ] }
+            - { name: tools, groups: [ table, specialchar, insertcharacters ] }
             - { name: document, groups: [ mode ] }
         justifyClasses:
-            - text-left
+            - text-start
             - text-center
-            - text-right
-            - text-justify
+            - text-end
         extraPlugins:
-            - justify
+            - autolink
+            - editorplaceholder
         removePlugins:
             - image
         removeButtons:
             - Anchor
+            - Underline
+            - Strike
             - Styles

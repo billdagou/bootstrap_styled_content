@@ -1,0 +1,4 @@
+@import "EXT:bootstrap_styled_content/Configuration/TypoScript/Helper/ContentElement.typoscript"
+@import "EXT:bootstrap_styled_content/Configuration/TypoScript/Helper/ParseFunc.typoscript"
+
+@import "EXT:bootstrap_styled_content/Configuration/TypoScript/ContentElement/*.typoscript"
