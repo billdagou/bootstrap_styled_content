@@ -3,20 +3,16 @@ namespace Dagou\BootstratpStyledContent\ViewHelpers;
 
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
 class FillViewHelper extends AbstractViewHelper {
-    use CompileWithRenderStatic;
     /**
      * @var boolean
      */
     protected $escapeOutput = FALSE;
 
-    /**
-     * @return void
-     */
-    public function initializeArguments() {
+    public function initializeArguments(): void {
         parent::initializeArguments();
+
         $this->registerArgument('total', 'int', 'Total number.', TRUE);
         $this->registerArgument('per', 'int', 'Per', TRUE);
     }
@@ -28,7 +24,7 @@ class FillViewHelper extends AbstractViewHelper {
      *
      * @return string
      */
-    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext) {
+    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext): string {
         if ($arguments['per'] !== (int)$arguments['per'] || $arguments['per'] < 1) {
             return '';
         }
